@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 215vh;
+    background-image: linear-gradient(rgb(0,0,0,0.75),rgb(0,0,0,0.75)),url(Wayline1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative; 
+ }
+ .navbar ul li a{
+     text-decoration: none;
+     color: #fff;
+     text-transform: uppercase;
+ }
+ .navbar ul li::after{
+     content: '';
+     height: 3px;
+     width: 0;
+     background: #009688;
+     position: absolute;
+     left: 0;
+     bottom: -10px;
+     transition: 0.5s;
+ }
+ .navbar ul li:hover::after{
+    width: 100%; 
+ }
+ .logo{
+    width: 150px;
+    cursor: pointer;
+}
+.logo {
+    --g: 3px;     /* the gap */
+    --b: 3px;    /* border thickness*/
+    --c: #5249491f; /* the color */
+    
+    
+    padding: calc(var(--g) + var(--b));
+    --_c: rgba(172, 158, 158, 0) 0 25%, var(--c) 0 50%;
+    --_g1: repeating-linear-gradient(90deg ,var(--_c)) repeat-x;
+    --_g2: repeating-linear-gradient(180deg,var(--_c)) repeat-y;
+    background:
+      var(--_g1) var(--_p, 25%) 0   ,var(--_g2) 0    var(--_p,125%),
+      var(--_g1) var(--_p,125%) 100%,var(--_g2) 100% var(--_p, 25%);
+    background-size: 200% var(--b),var(--b) 200%;
+    cursor: pointer;
+    filter: grayscale(50%);
+    transition: .3s;
+  }
+.logo:hover {
+    --_p: 75%;
+    filter: grayscale(0%);
+  }
+
+  .banner h1  {
+    text-align: center;
+    font-size: 100px;
+    color: #fff;
+    font-weight: bolder;
+  }
+
+  .banner h3  {
+    text-align: center;
+    font-size: 20px;
+    color: #858585;
+    font-weight: normal;
+  }
+  .banner h3 span {
+    text-align: center;
+    font-size: 20px;
+    color: #f5f5f5;
+    font-weight: normal;
+  }
+
+  hr { 
+    border: solid #707070; 
+    border-width: 1px 0 0; 
+    clear: both; 
+    margin: 11px 0 30px; 
+    height: 0;  
+
+  }
+    
+
+
+  .social ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, 60%);
+  }
+  .social ul li{
+    
+    list-style: none;
+    margin: 0 15px;
+  }
+  .social ul li a{
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    background: transparent;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #fff;
+    transition: .5s;
+  }
+
+
+  .social ul li a:hover::before{
+    transform: scale(1.2);
+    filter: blur(.5px);
+  }
+
+  .social ul li a:hover{
+    color: #009688;
+    box-shadow: 0 0 15px #009688;
+  }
+
+  .banner h2{
+    text-align: center;
+    font-size: 50px;
+    color: #f5f5f5;
+    font-weight: normal;
+  }
+  .banner h2:hover{
+    text-align: center;
+    font-size: 50px;
+    color: #009688;
+    font-weight: normal;
+  }
+.banner .profile {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.banner h4{
+  text-align: left;
+  font-size: 20px;
+  color: #afaeae;
+  font-weight: normal;
+}
+.banner h4:hover{
+  text-align: left;
+  font-size: 20px;
+  color: #f5f5f5;
+  font-weight: normal;
+}
+
+.column {
+  float: left;
+  width: 30%;
+  padding: 10px;
+
+}
+.column2 {
+  float: left;
+  width: 55%;
+  padding: 10px;
+
+}
+.column3 {
+  float: left;
+  width: 30%;
+  padding: 10px;
+
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.banner .column img{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  transform: translateX(40%);
+
+}
+ .banner .column img:hover{
+  border-radius: 50%;
+  width: 220px;
+  height: 220px;
+  transform: translateX(40%);
+} 
+.banner .education{
+  background-color: #ffffff;
+  
+}
+
+.banner .education h5{
+  text-align: left;
+  font-size: 50px;
+  color: #000000;
+  font-weight: normal;
+}
+.banner .education h6{
+  text-align: left;
+  font-size: 40px;
+  color: #000000;
+  font-weight: normal;
+}
+.banner .education h4:hover{
+  text-align: left;
+  font-size: 20px;
+  color: #000000;
+  font-weight: normal;
+}
+.banner .education h4 span{
+  text-align: left;
+  font-size: 20px;
+  color: #fffefe;
+  font-weight: normal;
+}
+.banner .education h4:hover span{
+  text-align: left;
+  font-size: 20px;
+  color: #000000;
+  font-weight: normal;
+}
+.banner .education u:hover{
+  color: #1d1d1d;
+}
+
+.banner .education .row .column .microsoft{
+  width:  120px;
+  height: 120px;
+}
+
+.banner .contact{
+  background-color: #292929;
+  height: 100vh;
+}
+.banner .contact .form{
+  float: right;
+  width: 70%;
+}
+
+input[type=text], select, textarea {
+  width: 40%;
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 10px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical;
+  background: transparent;
+  border: 2px solid #a1a1a1;
+  transform: translateX(70%);
+  
+}
+.containerform{
+  place-items: center;
+  color: #fff;
+}
+
+.Submit{
+  width: 100%;
+  position: absolute;
+  top: 35%;
+  text-align: center;
+  color: #fff;
+}
+.submit{
+  width: 200px;
+  padding: 15px 0;
+  border-radius: 25px;
+  font-weight: bold;
+  font-style: ;
+  border: 2px solid #a1a1a1;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  transform: translateX(190%);
+  overflow: hidden;
+}
+
+
+
+.submit:hover{
+  border: 2px solid #777777;
+}
+.text:hover:hover{
+  border: 2px solid #777777;
+}
+.email:hover{
+  border: 2px solid #777777;
+}
+.comment:hover{
+  border: 2px solid #777777;
+}
